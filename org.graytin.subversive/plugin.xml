@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+<!-- ******************* Menus ******************** -->
+	<extension
+		point="org.eclipse.ui.popupMenus">
+	  
+	  <!-- ******************* Repository Management Menu ******************** -->
+      <objectContribution
+            objectClass="org.eclipse.team.svn.ui.repository.model.RepositoryLocation"
+            id="org.eclipse.team.svn.ui.RepositoryLocationContributions">
+
+         <action
+               label="%action.label"
+               class="org.graytin.subversive.commands.CheckoutByBuildAction"
+               tooltip="%SearchAndCheckoutAsBuildAction.tooltip"
+               icon="icons/arrow_down.gif"
+               menubarPath="checkoutGroup"
+               id="org.eclipse.team.svn.ui.action.remote.CheckoutByBuildAction">
+         </action>
+         <action
+               label="%action.label.0"
+               class="org.graytin.subversive.commands.MarkBranchAction"
+               tooltip="%MarkBranchAction.tooltip"
+               icon="icons/flag_green.gif"
+               menubarPath="checkoutGroup"
+               id="org.eclipse.team.svn.ui.action.remote.MarkBranchAction">
+         </action>
+      
+      </objectContribution>
+
+      <objectContribution
+            objectClass="org.eclipse.team.svn.ui.repository.model.RepositoryFolder"
+            id="org.eclipse.team.svn.ui.RepositoryFolderContributions">
+        
+         
+         <action
+               label="%action.label.1"
+               class="org.graytin.subversive.commands.CheckoutByBuildAction"
+               tooltip="%%SearchAndCheckoutAsBuildAction.tooltip"
+               icon="icons/arrow_down.gif"
+               menubarPath="checkoutGroup"
+               id="org.eclipse.team.svn.ui.action.remote.CheckoutByBuildAction">
+         </action>
+         
+           <action
+               label="%action.label.2"
+               class="org.graytin.subversive.commands.MarkBranchAction"
+               tooltip="%MarkBranchAction.tooltip"
+               icon="icons/flag_green.gif"
+               menubarPath="checkoutGroup"
+               id="org.eclipse.team.svn.ui.action.remote.MarkBranchAction">
+         </action>
+
+      </objectContribution>
+      </extension>
+     
+      <extension
+         point="org.eclipse.ui.decorators">
+      <decorator
+            adaptable="true"
+            class="org.graytin.subversive.decorator.BranchDecorator"
+            id="org.graytin.subversive.BranchDecorator"
+            label="%decorator.label"
+            lightweight="true"
+            state="true">
+         <enablement>
+              <objectClass
+                        name="org.eclipse.team.svn.ui.repository.model.RepositoryFolder">
+               </objectClass>
+         </enablement>
+      </decorator>
+      <decorator
+            adaptable="true"
+            class="org.graytin.subversive.decorator.ResourceRepositoryDecorator"
+            id="org.graytin.subversive.ResourceRepositoryDecorator"
+            label="%decorator.label.0"
+            lightweight="true"
+            state="true">
+         <enablement>
+              <objectClass
+                        name="org.eclipse.team.svn.core.resource.IRepositoryResource">
+               </objectClass>
+         </enablement>
+      </decorator>
+      <decorator
+            adaptable="true"
+            class="org.graytin.subversive.decorator.ProjectDecorator"
+            id="org.graytin.subversive.ProjectDecorator"
+            label="%decorator.label.1"
+            lightweight="true"
+            state="true">
+         <enablement>
+              <objectClass
+                        name="org.eclipse.core.resources.IProject">
+               </objectClass>
+         </enablement>
+      </decorator>
+      <decorator
+            adaptable="true"
+            class="org.graytin.subversive.decorator.BuildDecorator"
+            id="org.graytin.subversive.BuildDecorator"
+            label="%decorator.label.2"
+            lightweight="true"
+            state="true">
+         <enablement>
+              <objectClass
+                        name="org.eclipse.core.resources.IProject">
+               </objectClass>
+         </enablement>
+      </decorator>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+         <command
+               categoryId="org.graytin"
+               id="org.graytin.commands.checkoutProject"
+               name="%command.name">
+         </command>
+         <command
+               categoryId="org.graytin"
+               id="org.graytin.commands.compareBuilds"
+               name="%command.name.0">
+         </command>
+        <!-- <command
+               categoryId="org.graytin"
+               id="org.graytin.commands.downloadSVNConnectors"
+               name="%command.name.downloadSVNConnectors">
+         </command> -->
+   </extension>
+   <extension
+         point="org.eclipse.ui.commandImages">
+     
+      <image
+            commandId="org.graytin.commands.checkoutProject"
+            icon="icons/checkout_projects.gif">
+      </image>
+      <image
+            commandId="org.graytin.commands.compareBuilds"
+            icon="icons/compare.png">
+      </image>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+         <menuContribution
+               locationURI="menu:org.graytin.jenkins.graytin.menu?after=additions">
+          
+               <command
+                     commandId="org.graytin.commands.checkoutProject"
+                      tooltip="%command.tooltip">
+               </command>
+           
+               <command
+                     commandId="org.graytin.commands.compareBuilds"
+                     tooltip="%command.tooltip.0">
+               </command>
+            <!--   <command
+                     commandId="org.graytin.commands.downloadSVNConnectors"
+                     tooltip="%command.tooltip.downloadSVNConnectors">
+               </command>
+               -->
+          </menuContribution>
+         <menuContribution
+               locationURI="toolbar:org.graytin.jenkins.toolbar?after=additions">
+               <command
+                     commandId="org.graytin.commands.checkoutProject"
+                     tooltip="%command.tooltip">
+               </command>
+               <command
+                     commandId="org.graytin.commands.compareBuilds"
+                     tooltip="%command.tooltip.0">
+               </command>
+         </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      
+      <handler
+            class="org.graytin.subversive.commands.SearchProjects"
+            commandId="org.graytin.commands.checkoutProject">
+      </handler>
+      <handler
+            class="org.graytin.subversive.commands.CompareBuilds"
+            commandId="org.graytin.commands.compareBuilds">
+      </handler>
+     <!-- <handler
+            class="org.graytin.subversive.commands.DownloadSVNConnectors"
+            commandId="org.graytin.commands.downloadSVNConnectors">
+      </handler>
+      -->
+   </extension>
+ </plugin>

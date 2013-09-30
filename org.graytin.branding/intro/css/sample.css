@@ -1,0 +1,3 @@
+
+a#graytin-introLink img { background-image : url(graphics/intro.png); }
+a#graytin-introLink:hover img { background-image : url(graphics/intro_hover.png); }

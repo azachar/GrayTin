@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.graytin.feature"
+      label="Jenkins Source Control Integration for Kepler"
+      version="1.0.24.qualifier"
+      provider-name="Chocolate Jar"
+      plugin="org.graytin.branding">
+
+   <description url="https://github.com/azachar/GrayTin">
+      Offers a tool that allows to develop, synchronize and monitor source code against the Jenkins&apos; build revision.
+   </description>
+
+   <copyright url="https://github.com/azachar/GrayTin">
+      Copyright Chocolate Jar 2013 and Be Informed B.V. 2012
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      This release contains the following features: 
+       * development against a build
+       * project search within your repository and build
+       * background monitoring of your builds
+       * comparing builds (added, removed projects synchronization)
+       * mark build branch
+       * many others
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="joda-time" version="1.6.2" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.pde.ui"/>
+      <import plugin="org.slf4j.api" version="1.6.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.mylyn.commons.notifications.ui" version="1.0.3" match="greaterOrEqual"/>
+      <import plugin="org.apache.commons.lang" version="2.6.0" match="greaterOrEqual"/>
+      <import plugin="com.google.guava" version="14.0.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.mylyn.commons.notifications.core" version="1.0.3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.console"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.team.svn.ui"/>
+      <import plugin="org.eclipse.team.svn.core"/>
+      <import plugin="org.eclipse.team.ui"/>
+      <import plugin="org.graytin.jenkins" version="1.0.24" match="greaterOrEqual"/>
+      <import feature="org.eclipse.pde" version="3.7.2" match="greaterOrEqual"/>
+      <import feature="org.eclipse.team.svn" version="0.7.9.I20110819-1700" match="greaterOrEqual"/>
+      <import feature="org.eclipse.mylyn.commons.notifications" version="1.0.3.v20130107-0100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.core" version="3.8.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.pde.core"/>
+      <import plugin="org.eclipse.ui.intro"/>
+      <import plugin="org.eclipse.ui.intro.universal"/>
+   </requires>
+
+   <plugin
+         id="org.graytin.jenkins"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.graytin.subversive"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.google.guava"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="joda-time"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.graytin.branding"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.graytin.jenkins.eclipse4"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

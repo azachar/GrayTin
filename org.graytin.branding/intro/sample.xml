@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<introContent>
+  	<extensionContent id="graytin-introExtension" style="css/sample.css" name="Sample Extension" path="overview/@">
+		<group style-id="content-group" id="graytin-introLink-group">
+       		<link label="GrayTin" url="https://github.com/azachar/GrayTin" id="graytin-introLink" style-id="content-link">
+          		<text>GrayTin Suite allows you to synchronized workspace projects against Jenkins build's revision and many other features.</text>
+       		</link>
+       	</group>
+  	</extensionContent>
+</introContent>
