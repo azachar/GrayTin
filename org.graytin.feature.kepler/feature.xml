@@ -2,7 +2,7 @@
 <feature
       id="org.graytin.feature"
       label="Jenkins Source Control Integration for Kepler"
-      version="1.0.24.qualifier"
+      version="1.0.25.qualifier"
       provider-name="Chocolate Jar"
       plugin="org.graytin.branding">
 
