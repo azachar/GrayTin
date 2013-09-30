@@ -4,6 +4,6 @@ Bundle-Name: Compatibility Layer For Indigo
 Bundle-SymbolicName: org.graytin.jenkins.indigo
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: Chocolate Jar, Be Informed
-Fragment-Host: org.graytin.jenkins;bundle-version="1.0.25"
+Fragment-Host: org.graytin.jenkins;bundle-version="[1.0.25, 1.0.26)"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: org.eclipse.pde.internal.core.target.provisional
