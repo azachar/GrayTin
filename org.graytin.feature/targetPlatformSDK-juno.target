@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target includeMode="feature" name="SDK Tooling Target Platform Juno" sequenceNumber="46">
+<locations>
+<location path="${workspace_loc}/target-platform/sdk-tools" type="Profile"/>
+<location path="${workspace_loc}/target-platform/eclipse-platform-juno/Subversive-1.0.0.I20130122-1700" type="Profile"/>
+<location path="${workspace_loc}/target-platform/eclipse-platform-juno/eclipse-rcp-juno-SR2-macosx-cocoa-x86_64" type="Profile"/>
+<location path="${workspace_loc}/target-platform/eclipse-platform-juno/Subversive-connectors-allplatforms-3.0.1.I20130507-1700" type="Profile"/>
+<location path="${workspace_loc}/target-platform/felix" type="Profile"/>
+</locations>
+</target>

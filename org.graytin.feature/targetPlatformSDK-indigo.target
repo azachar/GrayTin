@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target includeMode="feature" name="SDK Tooling Target Platform Indigo" sequenceNumber="55">
+<locations>
+<location path="${workspace_loc}/target-platform/sdk-tools" type="Profile"/>
+<location path="${workspace_loc}/target-platform/felix" type="Profile"/>
+<location path="${workspace_loc}/target-platform/eclipse-platform-indigo/delta-pack-3.7.2" type="Profile"/>
+<location path="${workspace_loc}/target-platform/eclipse-platform-indigo/Subversive-incubation-0.7.9.I20110819-1700" type="Profile"/>
+<location path="${workspace_loc}/target-platform/eclipse-platform-indigo/Subversive-connectors-2.3.0.I20120520-1700" type="Profile"/>
+<location path="${workspace_loc}/target-platform/eclipse-platform-indigo/eclipse-rcp-indigo-SR2-macosx-cocoa-x86_64" type="Profile"/>
+<location path="/Users/azachar/homeoffice/workspace-SDK-TOOLS/target-platform/eclipse-platform-indigo/porting" type="Directory"/>
+<location path="/Users/azachar/homeoffice/workspace-SDK-TOOLS/target-platform/eclipse-platform-indigo/mylyn-3.8.4.v20130429-0100" type="Profile"/>
+</locations>
+</target>

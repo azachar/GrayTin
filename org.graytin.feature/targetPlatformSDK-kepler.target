@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target includeMode="feature" name="SDK Tooling Target Platform Kepler" sequenceNumber="49">
+<locations>
+<location path="${workspace_loc}/target-platform/sdk-tools" type="Profile"/>
+<location path="${workspace_loc}/target-platform/eclipse-platform-juno/Subversive-1.0.0.I20130122-1700" type="Profile"/>
+<location path="${workspace_loc}/target-platform/eclipse-platform-juno/Subversive-connectors-allplatforms-3.0.1.I20130507-1700" type="Profile"/>
+<location path="${workspace_loc}/target-platform/felix" type="Profile"/>
+<location path="${workspace_loc}/target-platform/eclipse-platform-kepler/eclipse-rcp-kepler-R-macosx-cocoa-x86_64" type="Profile"/>
+<location path="${workspace_loc}/target-platform/eclipse-platform-kepler/org.eclipse.pde.source-4.3" type="Profile"/>
+</locations>
+</target>
