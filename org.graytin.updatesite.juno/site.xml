@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="GrayTin Update site for Juno" url="http://ci.pd.beinformed.nl/tools/juno">
+      Update site for GrayTin Suite for Eclipse Juno
+   </description>
+   <feature url="features/org.graytin.feature_1.0.25.qualifier.jar" id="org.graytin.feature" version="1.0.25.qualifier">
+      <category name="org.graytin"/>
+   </feature>
+   <category-def name="org.graytin" label="GrayTin Suite">
+      <description>
+         Allows developers to develop complex OSGi applications by SDK and NON-SDK style with Jenkins, source control (SVN) and many other features.
+      </description>
+   </category-def>
+</site>
