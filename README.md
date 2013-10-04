@@ -16,7 +16,7 @@ Thanks
 ======
 The project has been migrated from an internal to the open source project with kind support of  Be Informed company.
 
-Especially I'd like to say my thanks to Dobias van Buuren and Rachid Tar who have inspirited & helped me with the development of GrayTin.
+Especially I'd like to say my thanks to Dobias van Buuren and Rachid Ben Moussa who have inspirited & helped me with the development of GrayTin.
 
 Andrej Zachar
 Author
